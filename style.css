@@ -2,5 +2,13 @@ body {
     background: url(./imageedit_5_9832735155.png) no-repeat center center fixed;
     background-size: cover;
     color: rgb(14, 76, 158);
-    
+}
+#madLibs {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(210, 241, 255);
+    font-size: large;
+}
+h1 {
+    text-align: center;
 }
