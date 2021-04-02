@@ -27,6 +27,8 @@ h1 {
 }
 div {
     padding-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 p {
     font-family: 'reenie beanie';
@@ -35,4 +37,8 @@ p {
 }
 #blanks {
     color: #F686BD;
+}
+#story {
+    margin-left: 50px;
+    margin-right: 50px;
 }
