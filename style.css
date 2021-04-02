@@ -1,14 +1,38 @@
 body {
     background: url(./imageedit_5_9832735155.png) no-repeat center center fixed;
     background-size: cover;
-    color: rgb(14, 76, 158);
+    color: #083D77;
 }
 #madLibs {
     justify-content: center;
     text-align: center;
-    background-color: rgb(210, 241, 255);
+    background-color: rgba(164, 194, 168, 0.65);
     font-size: large;
+    font-weight: bold;
 }
 h1 {
     text-align: center;
+    font-family: 'reenie beanie';
+    font-size: 50px;
+}
+::placeholder {
+    color: #F686BD;
+    font-family: 'reenie beanie';
+    font-size: larger;
+}
+#mad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div {
+    padding-bottom: 15px;
+}
+p {
+    font-family: 'reenie beanie';
+    text-align: center;
+    font-size: 25px;
+}
+#blanks {
+    color: #F686BD;
 }
