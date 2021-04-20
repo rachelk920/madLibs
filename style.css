@@ -3,12 +3,20 @@ body {
     background-size: cover;
     color: #083D77;
 }
+
+#button {
+    justify-content: center;
+}
+
 .madLibs {
     justify-content: center;
     text-align: center;
     background-color: rgba(164, 194, 168, 0.65);
     font-size: large;
     font-weight: bold;
+    color: #F686BD;
+    font-family: 'reenie beanie';
+    border-radius: 12px;
 }
 h1 {
     text-align: center;
@@ -42,6 +50,19 @@ p {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+#button {
+    border-radius: 12px;
+    background-color:  rgba(164, 194, 168, 0.65);
+    color: #F686BD;
+    font-family: 'reenie beanie';
+    font-size: 25px;
+}
+
+#button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 @media (max-width: 390px) {
     #story {
         font-size: 20px;
@@ -52,7 +73,6 @@ p {
         grid-template-columns: 10px 10px;
         font-size: 12px;
         grid-column-gap: 150px;
-        justify-items: center;
         margin-right: 150px;
     }
     .madLibs {
@@ -60,5 +80,8 @@ p {
     }
     h1 {
         margin-right: 40px;
+    }
+    #answer {
+        font-size: 20px;
     }
 }

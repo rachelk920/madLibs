@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,54 +17,54 @@
     <h1>I Dream of Vacations</h1>
     <br>
     <br>
-    <div class="container">
+    <div class="container" style="text-align: center;">
     <div class="row" id='mad'>
         <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="ADJECTIVE"></div>
+    <input type="text" name="" id = "adj1" class="madLibs" placeholder="ADJECTIVE"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="ADJECTIVE"></div>
+    <input type="text" name="" id = "adj2" class="madLibs" placeholder="ADJECTIVE"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="NOUN"></div>
+    <input type="text" name="" id = "noun1" class="madLibs" placeholder="NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="NOUN"></div>
+    <input type="text" name="" id = "noun2" class="madLibs" placeholder="NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PLURAL NOUN"></div>
+    <input type="text" name="" id = "nouns1" class="madLibs" placeholder="PLURAL NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="GAME"></div>
+    <input type="text" name="" id = "game" class="madLibs" placeholder="GAME"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PLURAL NOUN"></div>
+    <input type="text" name="" id = "nouns2" class="madLibs" placeholder="PLURAL NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
+    <input type="text" name="" id = "verb1" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
+    <input type="text" name="" id = "verb2" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PLURAL NOUN"></div>
+    <input type="text" name="" id = "nouns3" class="madLibs" placeholder="PLURAL NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
+    <input type="text" name="" id = "verb3" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="NOUN"></div>
+    <input type="text" name="" id = "noun3" class="madLibs" placeholder="NOUN"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PLANT"></div>
+    <input type="text" name="" id = "plant" class="madLibs" placeholder="PLANT"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PART OF THE BODY"></div>
+    <input type="text" name="" id = "body" class="madLibs" placeholder="PART OF THE BODY"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="A PLACE"></div>
+    <input type="text" name="" id = "place" class="madLibs" placeholder="A PLACE"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
+    <input type="text" name="" id = "verb4" class="madLibs" placeholder="VERB ENDING IN -ING"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="ADJECTIVE"></div>
+    <input type="text" name="" id = "adj3" class="madLibs" placeholder="ADJECTIVE"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="NUMBER"></div>
+    <input type="text" name="" id = "num" class="madLibs" placeholder="NUMBER"></div>
     <div class="col-6 col-sm-3">
-    <input type="text" name="" class="madLibs" placeholder="PLURAL NOUN"></div>
-   
-
-
+    <input type="text" name="" id = "nouns4" class="madLibs" placeholder="PLURAL NOUN"></div>
     </div>
+    <button id='button' type="button" onclick="createParagraph()">SUBMIT</button>
 </div>
-<p id='story'>
+<br>
+<div id = 'answer'></div>
+<!-- <p id='story'>
     A vacation is when you take a trip to some <span style="color:#F686BD; font-weight: bolder;">[ADJECTIVE]</span> place with your <span style="color:#F686BD; font-weight: bolder;">[ADJECTIVE]</span> family. Usually you go to some place that is near a/an <span style="color:#F686BD; font-weight: bolder;">[NOUN]</span> or up a/an <span style="color:#F686BD; font-weight: bolder;">[NOUN]</span>. A good vacation place is one where you can ride <span style="color:#F686BD; font-weight: bolder;">[PLURAL NOUN]</span> or play <span style="color:#F686BD; font-weight: bolder;">[GAME]</span> or go hunting for <span style="color:#F686BD; font-weight: bolder;">[PLURAL NOUN]</span>. I like to spend my time <span style="color:#F686BD; font-weight: bolder;">[VERB ENDING IN -ING]</span> or <span style="color:#F686BD; font-weight: bolder;">[VERB ENDING IN -ING]</span>. When parents go on a vacation, they spend their time eating three <span style="color:#F686BD; font-weight: bolder;">[PLURAL NOUN]</span> a day, and fathers play golf, and mothers sit around <span style="color:#F686BD; font-weight: bolder;">[VERB ENDING IN -ING]</span>. Last summer, my little brother fell in a/an <span style="color:#F686BD; font-weight: bolder;">[NOUN]</span> and got poison <span style="color:#F686BD; font-weight: bolder;">[PLANT]</span> all over his <span style="color:#F686BD; font-weight: bolder;">[PART OF THE BODY]</span>. My family is going to go to (the) <span style="color:#F686BD; font-weight: bolder;">[A PLACE]</span>, and I will practice <span style="color:#F686BD; font-weight: bolder;">[VERB ENDING IN -ING]</span>. Parents need vacations more than kids because parents are always very <span style="color:#F686BD; font-weight: bolder;">[ADJECTIVE]</span> and because they have to work <span style="color:#F686BD; font-weight: bolder;">[NUMBER]</span> hours every day all year making enough <span style="color:#F686BD; font-weight: bolder;">[PLURAL NOUN]</span> to pay for the vacation.
-</p>
+</p> -->
 <br>
 <br>
 
